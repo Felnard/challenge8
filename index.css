@@ -1,0 +1,157 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:hsl(257, 40%, 49%);
+    scroll-behavior:smooth;
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img.bgMobile{
+    position:absolute;
+    width: 100%;
+    z-index:-1;
+    background-repeat:no-repeat;
+}
+img.bgDesktop{
+   position:absolute;
+   display:none;
+   background-repeat:no-repeat;
+}
+
+main.container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+}
+div.top{
+    
+    margin: 2rem 1rem 4rem 1rem;
+}
+
+div.top img:first-of-type{
+    width: 12rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+
+div.top img:last-of-type{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 1rem;
+    margin: auto;
+}
+/* SECOND */
+div.second{
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.second h2  {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.second p{
+    line-height:1.6;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom:1.5rem;
+}
+
+button{
+    background-color:white;
+    border: none;
+    font-size:1.2rem;
+    border-radius:2rem;
+    color:hsl(257, 40%, 49%);
+    padding:10px 6rem;
+    box-shadow: 2px 2px 10px hsl(257, 36%, 23%);
+}
+
+.attribution {
+    background-color:white;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+  @media (min-width:1100px){
+
+    body{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden;
+    }
+    img.bgMobile{
+       display:none;
+    }
+
+    img.bgDesktop{
+        display:inline-block;
+        width: 100%;
+        z-index: -1;
+        background-repeat:no-repeat;
+        left:0
+    }
+
+    main.container{
+        flex-direction:row;
+        width:100%;
+        margin:-2% 3% 0 7%;
+    }
+
+    div.top{
+        width:50%;
+    }
+
+    div.top img:first-of-type{
+        width: 30%;
+        margin-left: 1rem;
+    }
+    div.top img:last-of-type{
+        width: 105%;
+        margin-left: 1rem;
+    }
+
+
+    /* SECOND */
+    div.second{
+        width:50%;
+        text-align:left;
+        padding-right: 10rem;
+        margin-left: 5rem;
+    }
+    div.second p,button{
+        font-size: 1.5rem;
+    }
+    div.second h2{
+        
+        font-size: 3rem;
+    }
+
+    button{
+        padding:1rem 4.5rem;
+    }
+
+    .attribution {
+        display:none;
+    }
+  }
